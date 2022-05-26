@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbarbg">
+        <div class="navbar">
+            <h1>DojoWeather</h1>
+            <ul>
+                <li onclick="alert('Loading weather report...')">Burbank</li>
+                <li onclick="alert('Loading weather report...')">Chicago</li>
+                <li onclick="alert('Loading weather report...')">Dallas</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="contentheader">
+            <h1>San Jose</h1>
+            <div class="tempchoice">
+                <p><strong>
+                    show temperature in</strong></p>
+                <select name="temp" id="temp" onchange="convert(this)">
+                    <option value="C">&#8451;</option>
+                    <option value="F">&#8457;</option>
+                </select>
+            </div>
+        </div>
+        <div class="weatherinfo">
+            <div class="box">
+                <h2>Today</h2>
+                <img src="assets/some_rain.png" alt="rain">
+                <p>Some Rain</p>
+                <div class="temp">
+                    <div class="tempnum">
+                        <p id="temp1">24</p>&#176;
+                    </div>
+                    <div class="tempnum">
+                        <p><span id="temp2">18</span></p>&#176;
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <h2>Tomorrow</h2>
+                <img src="assets/some_sun.png" alt="sun">
+                <p>Some Sun</p>
+                <div class="temp">
+                    <div class="tempnum">
+                        <p id="temp3">27</p>&#176;</div>
+                    <div class="tempnum">
+                        <p><span id="temp4">19&#176;</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <h2>Friday</h2>
+                <img src="assets/some_clouds.png" alt="clouds">
+                <p>Some Clouds</p>
+                <div class="temp">
+                    <div class="tempnum">
+                        <p id="temp5">21</p>&#176;
+                    </div>
+                    <div class="tempnum">
+                        <p><span id="temp6">16</span></p>&#176;
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="boxend">
+                <h2>Saturday</h2>
+                <img src="assets/some_sun.png" alt="sun">
+                <p>Some Sun</p>
+                <div class="temp">
+                    <div class="tempnum">
+                        <p id="temp7">26</p>&#176;
+                    </div>
+                    <div class="tempnum">
+                        <p><span id="temp8">21</span></p>&#176;
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="cookies" id="cookies">
+            <img src="assets/cookie.png" alt="cookie">
+            <div class="cookiecontent">
+                <h1>Stop! Cookie time</h1>
+                <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more...</a></p>
+            </div>
+            <button onclick="removeCookie()">I Accept</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
